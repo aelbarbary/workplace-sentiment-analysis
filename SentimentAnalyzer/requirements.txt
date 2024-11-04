@@ -1,0 +1,5 @@
+Flask
+APScheduler
+boto3
+transformers
+torch  # Make sure you include torch if your model requires it

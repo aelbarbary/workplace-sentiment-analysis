@@ -1,0 +1,16 @@
+# Python virtual environment
+venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.egg-info/
+*.egg
+dist/
+build/
+__pycache__/
+*.pyc
+*.pyo
+function.zip

@@ -13,7 +13,6 @@ echo "Pulling the Docker image..."
 docker pull $ECR_URI
 
 # Step 3: Run the Docker container
-# Step 3: Run the Docker container
 echo "Running the Docker container..."
 docker run -d -p 80:5000 $ECR_URI || { echo "Failed to run the container"; exit 1; }
 

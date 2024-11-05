@@ -12,7 +12,7 @@ class SentimentAnalyzer:
     def fetch_messages(self, api_url):
         response = requests.get(api_url)
         response.raise_for_status()  
-        return response.json()
+        return response.json()  
 
     def save_to_s3(self, messages):
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -44,7 +44,6 @@ def lambda_handler(event, context, sentiment_analyzer=None):
             'body': json.dumps({'error': str(e)})
         }
 
-# If you want to run tests
 if __name__ == "__main__":
     test_event = {}
     test_context = {}
